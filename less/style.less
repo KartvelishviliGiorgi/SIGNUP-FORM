@@ -1,0 +1,38 @@
+@height: 50px;
+@bRadius: 5px;
+@fSize: 20px;
+
+form {
+    max-width: 500px;
+    margin: auto;
+    margin-top: 50px;
+    text-align: center;
+}
+
+input {
+    width: 500px;
+    @media (max-width: 600px) {
+        width: 250px;
+      }
+    height: @height;
+    margin: 5px 0 20px 0;
+    display: inline-block;
+    border-radius: @bRadius;
+    border: none;
+    background: #F1F1F1;
+    font-size: @fSize;
+    padding-left: 10px;
+}
+
+button {
+    display: block;
+    position:relative;
+    left:40%;
+
+    border-radius: @bRadius;
+    border-style: solid;
+    border-color: #F1F1F1;
+    font-size: @fSize;
+    color: white;
+    background-color: #0055FF;
+}
